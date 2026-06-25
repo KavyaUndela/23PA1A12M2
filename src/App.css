@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f3f6fb;
+  color: #1f2937;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.MuiPaper-root {
+  border-radius: 12px;
+}
+
+button {
+  text-transform: none;
+}
