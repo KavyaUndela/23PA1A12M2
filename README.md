@@ -1,25 +1,137 @@
-# Campus Notification Platform
+# 🎓 Campus Notification Platform
 
-A React + Vite frontend demonstrating notification listing, type filtering, and priority inbox behavior.
+A modern **React + TypeScript + Vite** application for managing campus notifications. The platform allows students to view, filter, prioritize, and manage academic notifications with a clean, responsive Material UI interface.
 
-## Setup
+---
 
-1. Open a terminal in `notification-app-fe`
-2. Run `npm install`
-3. Run `npm run dev`
-4. Open the local dev URL shown by Vite (usually `http://localhost:5173`)
+## ✨ Features
 
-## Configuration
+* 📢 Display all campus notifications
+* ⭐ Priority Inbox (Top-N important notifications)
+* 🔍 Filter notifications by type
+* 👀 Mark notifications as viewed
+* 🔄 Refresh notifications from API
+* 📊 Dashboard showing Total and Unread notifications
+* 📱 Responsive design for desktop and mobile
+* 📝 Custom logging middleware
+* ⚡ Fast development with Vite
 
-If the remote notification API requires authorization, create a `.env` file based on `.env.example`:
+---
 
-```env
-VITE_API_TOKEN="Bearer <your-token>"
+## 🛠️ Tech Stack
+
+* React 18
+* TypeScript
+* Vite
+* Material UI (MUI)
+* Axios
+* CSS3
+
+---
+
+## 📂 Project Structure
+
+```text
+notification-app-fe/
+├── src/
+│   ├── api/
+│   ├── components/
+│   ├── lib/
+│   ├── utils/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── types.ts
+├── public/
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-## Notes
+---
 
-- The app fetches from `http://4.224.186.213/evaluation-service/notifications`
-- If the remote API is unavailable, a fallback sample dataset is displayed
-- The `Priority Inbox` tab uses a top-10 ranking algorithm based on type and recency
-- The `Logs` tab displays events captured by the custom logging middleware
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/KavyaUndela/23PA1A12M2.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd notification-app-fe
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+
+---
+
+## 📋 Notification Types
+
+* Placement
+* Result
+* Event
+
+---
+
+## ⭐ Priority Inbox
+
+The Priority Inbox automatically ranks notifications based on:
+
+* Notification Type
+* Recency
+* Priority Weight
+
+Only the most important notifications are displayed.
+
+---
+
+## 📊 Dashboard
+
+The dashboard includes:
+
+* Total Notifications
+* Unread Notifications
+* Notification Filters
+* Refresh Button
+* Mark All as Viewed
+
+---
+
+
+
+## 📁 Repository
+
+GitHub Repository:
+
+```text
+https://github.com/KavyaUndela/23PA1A12M2
+```
+
+---
+
+## 👩‍💻 Author
+
+**Undela Kavya Saranya**
+
+GitHub: https://github.com/KavyaUndela
