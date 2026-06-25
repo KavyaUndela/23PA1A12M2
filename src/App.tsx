@@ -116,7 +116,10 @@ export default function App() {
           recordLog({
             level: 'info',
             message: 'Backend returned no notifications; showing fallback data',
-            metadata: { page: currentPage, filter: typeFilter }
+            metadata: {
+  page: String(currentPage),
+  filter: typeFilter
+}
           });
           return;
         }
@@ -129,7 +132,10 @@ export default function App() {
         recordLog({
           level: 'error',
           message: 'Failed to fetch notifications from backend',
-          metadata: { error: String(error), page: currentPage, filter: typeFilter }
+          metadata: {
+  page: String(currentPage),
+  filter: typeFilter
+}
         });
       }
     };
